@@ -1,7 +1,17 @@
-    // Approach: Kadane's Algorithm
-        // At every element, decide whether to:
-        // 1. Continue the previous subarray
-        // 2. Start a new subarray from the current element
+//   ### 3. Maximum Subarray — LeetCode #53
+
+// **Approach:** Kadane's Algorithm
+
+// **Idea:**  
+// At every element, compare:
+// - Continuing the previous subarray: `currentSum + nums[i]`
+// - Starting fresh from the current element: `nums[i]`
+
+// Choose the maximum of the two.
+
+// **Time Complexity:** O(n)
+
+// **Space Complexity:** O(1)
 class Solution {
     public int maxSubArray(int[] nums) {
         int max=Integer.MIN_VALUE;
