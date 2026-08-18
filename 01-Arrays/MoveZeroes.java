@@ -1,9 +1,9 @@
-#283 LeetCode
-Approach: Two Pointers
-i scans the array, j tracks the position for the next non-zero element. When a non-zero element is found, swap nums[i] with nums[j] and increment j.
+// #283 LeetCode
+// Approach: Two Pointers
+// i scans the array, j tracks the position for the next non-zero element. When a non-zero element is found, swap nums[i] with nums[j] and increment j.
 
-Time: O(n)
-Space: O(1)
+// Time: O(n)
+// Space: O(1)
 
 class Solution {
     public void moveZeroes(int[] nums) {
